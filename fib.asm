@@ -3,7 +3,7 @@
 main:
 	li $v0, 5
 	syscall
-	ori $a0, $v0, 0 
+	ori $a0, $v0, 0
 	
 	jal fib
 	
@@ -16,11 +16,11 @@ end:
 	syscall
 	
 fib:
-	ori $t0, $zero, 0
-	addi, $a0, $a0, -1
-	
+	ori $t0, $zero, 1
+		
 	add $t1, $zero, 0
 	add $t2, $zero, 1
+	add $t3, $zero, 1
 loop:
 	add $t3, $t1, $t2
 	addi $t1, $t2, 0
